@@ -1,0 +1,49 @@
+{
+    "action": "STAKE_WITHDRAW",
+    "description": "Remove staked tokens and accumulated rewards from staking protocols, supporting various withdrawal mechanisms including unstaking periods, instant withdrawals with fees, reward claims, and exit from staking positions with consideration for lock periods and protocol conditions.",
+    "keywords": "Unstake tokens, withdraw stake, remove staked, unstaking withdrawal, claim rewards, withdraw staking, unstake position, remove stake, withdraw rewards, claim staked, unstake crypto, withdraw from staking, remove staking, unstaking tokens, claim position, withdraw validator, unstake and claim, remove from staking, withdrawal from stake, unstake rewards",
+    "network": "1",
+    "inputs": [
+        {
+            "name": "poolId",
+            "type": "string",
+            "default": ""
+        },
+        {
+            "name": "amount",
+            "type": "string",
+            "default": ""
+        }
+    ],
+    "outputs": [
+        {
+            "name": "success",
+            "type": "boolean"
+        }
+    ],
+    "protocol": {
+        "solv": {
+            "contract": {
+                "1": {
+                    "address": "0x1fF7d7C0A7D8E94046708C611DeC5056A9d2B823",
+                    "depositToken": "0xC96dE26018A54D51c097160568752c4E3BD6C364",
+                    "solvBTC": "0x7A56E1C57C7475CCf742a1832B028F0456652F97",
+                    "poolId": "0x2dc130e46b5958208155546bd4049d5b3319798063a8c4180b4b2b82f3ebdc3d"
+                },
+                "56": {
+                    "address": "0x5c1215712F174dF2Cbc653eDce8B53FA4CAF2201",
+                    "depositToken": "0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c",
+                    "solvBTC": "0x4aae823a6a0b376de6a78e74ecc5b079d38cbcf7",
+                    "poolId": "0xafb1107b43875eb79f72e3e896933d4f96707451c3d5c32741e8e05410b321d8"
+                },
+                "42161": {
+                    "address": "0xe9eD7530427Cb41A56C9e004e00e074cCc168C44",
+                    "depositToken": "0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f",
+                    "solvBTC": "0x3647c54c4c2C65bC7a2D63c0Da2809B399DBBDC0",
+                    "poolId": "0x488def4a346b409d5d57985a160cd216d29d4f555e1b716df4e04e2374d2d9f6"
+                }
+            },
+            "function": "createRedemption"
+        }
+    }
+}

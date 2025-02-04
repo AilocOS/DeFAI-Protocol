@@ -1,0 +1,32 @@
+{
+    "action": "TRANSFER",
+    "description": "Execute transfers of ERC20, BEP20, or other standard token contracts between wallet addresses. This supports multiple token standards across different networks with customizable transaction parameters, gas settings, and transfer amounts for secure token movements.",
+    "keywords": "Transfer token, send ERC20, transfer USDT, send USDC, transfer BEP20, send tokens, transfer stablecoin, send token contract, transfer ERC721, token movement, send contract token, transfer crypto token, send wrapped token, transfer coin, send digital token, contract transfer, ERC20 movement, transfer digital asset, send custom token, transfer standard token.",
+    "network": "1",
+    "inputs": [
+        {
+            "name": "tokenAddress",
+            "type": "string",
+            "default": ""
+        },
+        {
+            "name": "toAddress",
+            "type": "string",
+            "default": ""
+        },
+        {
+            "name": "amount",
+            "type": "string",
+            "default": ""
+        }
+    ],
+    "outputs": [
+        {
+            "name": "success",
+            "type": "boolean"
+        }
+    ],
+    "protocol": {
+        "name": ""
+    }
+}

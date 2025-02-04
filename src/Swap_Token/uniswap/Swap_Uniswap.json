@@ -1,0 +1,53 @@
+{
+    "action": "SWAP_TOKEN",
+    "description": "Exchange tokens using decentralized exchanges (DEX) and aggregators. This supports multi-chain swaps with the following features: 1. Best route finding 2. Optimal slippage settings 3. Price impact calculations 4. MEV protection 5. Access to various liquidity sources and trading pairs.",
+    "keywords": "Swap tokens, exchange crypto, trade tokens, token swap, dex swap, swap eth, swap cryptocurrency, exchange tokens, crypto swap, swap coins, token exchange, trade cryptocurrency, swap digital assets, dex trade, token trading, swap crypto assets, exchange pairs, swap trading pairs, defi swap, token conversion, swap on uniswap, pancakeswap exchange, sushiswap trade, trade on dex, best rate swap",
+    "network": "1",
+    "inputs": [
+        {
+            "name": "inputToken",
+            "type": "string",
+            "default": ""
+        },
+        {
+            "name": "inputNetwork",
+            "type": "string",
+            "default": ""
+        },
+        {
+            "name": "outputToken",
+            "type": "string",
+            "default": ""
+        },
+        {
+            "name": "outputNetwork",
+            "type": "string",
+            "default": ""
+        },
+        {
+            "name": "amount",
+            "type": "string",
+            "default": ""
+        },
+        {
+            "name": "slippage",
+            "type": "string",
+            "default": ""
+        },
+        {
+            "name": "prioritizationFee",
+            "type": "string",
+            "default": ""
+        }
+    ],
+    "outputs": [
+        {
+            "name": "success",
+            "type": "boolean"
+        }
+    ],
+    "protocol": {
+        "name": "uniswap",
+        "quote": "https://interface.gateway.uniswap.org/v2/quote"
+    }
+}
